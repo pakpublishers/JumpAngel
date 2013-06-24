@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    >
+    
+    <TextView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Payment"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dip"
+        android:layout_marginLeft="10dip"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/black"/>
+    
+    <LinearLayout android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/jumpangel"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/icon"
+        android:layout_marginTop="10dip"
+        android:layout_marginLeft="10dip"></LinearLayout>
+    
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_below="@+id/icon"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="10dip"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        
+        <LinearLayout android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Assistance Type: "
+                android:textStyle="bold"
+                android:textColor="@android:color/black"/>
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="values: "
+                android:id="@+id/PaymentAssistanceType"
+                android:textColor="@android:color/black"/>
+        </LinearLayout>
+         <LinearLayout android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Status: "
+                android:textStyle="bold"
+                android:textColor="@android:color/black"/>
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="values: "
+                android:id="@+id/Payment_Status"
+                android:textColor="@android:color/black"/>
+        </LinearLayout>
+         <LinearLayout android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Provider: "
+                android:textStyle="bold"
+                android:textColor="@android:color/black"/>
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="values: "
+                android:id="@+id/Payment_Provider"
+                android:textColor="@android:color/black"/>
+        </LinearLayout>
+         <LinearLayout android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Technician: "
+                android:textStyle="bold"
+                android:textColor="@android:color/black"/>
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="values: "
+                android:id="@+id/Payment_Technician"
+                android:textColor="@android:color/black"/>
+        </LinearLayout>
+          <LinearLayout android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Halos Awarded: "
+                android:textStyle="bold"
+                android:textColor="@android:color/black"/>
+            <RatingBar 
+                android:id="@+id/Payment_Rating"
+                android:layout_width="wrap_content" style="@style/myRatingBar" android:layout_height="wrap_content"/>
+        </LinearLayout>
+         <LinearLayout android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Charge Pending: "
+                android:textStyle="bold"
+                android:textColor="@android:color/black"/>
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="values: "
+                android:id="@+id/ChargePending"
+                android:textColor="@android:color/black"/>
+        </LinearLayout>
+         <LinearLayout android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bid Amount: "
+                android:textStyle="bold"
+                android:textColor="@android:color/black"/>
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="values: "
+                android:id="@+id/Payment_BidAmount"
+                android:textColor="@android:color/black"/>
+        </LinearLayout>
+         
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true">
+        <Button android:layout_width="150dip"
+            android:layout_height="35dip"
+            android:id="@+id/PayNowButton"
+            android:textSize="11dip"
+            android:textColor="@android:color/white"
+            android:background="@drawable/mybutton"
+            android:text="Pay Now"/>
+        <Button android:layout_width="150dip"
+            android:background="@drawable/mybutton"
+            android:layout_height="35dip"
+            android:textSize="11dip"
+            android:id="@+id/Payment_IncreaseAmount"
+            android:textColor="@android:color/white"
+            android:text="Increase Amount"/>
+        <Button android:layout_width="150dip"
+            android:background="@drawable/mybutton"
+            android:id="@+id/RequestRefund"
+            android:layout_height="35dip"
+            android:textSize="11dip"
+            android:layout_marginBottom="10dip"
+            android:textColor="@android:color/white"
+            android:text="Request Refund"/>
+    </LinearLayout>
+    
+</RelativeLayout>

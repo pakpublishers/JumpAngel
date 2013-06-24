@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.citrusbits.jumpangle"
+    android:versionCode="1"
+    android:versionName="1.0" >
+    
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="16" />
+	   
+	
+	<permission
+          android:name="com.citrusbits.jumpangle.permission.MAPS_RECEIVE"
+          android:protectionLevel="signature"/>
+    
+    <uses-permission android:name="com.citrusbits.jumpangle.permission.MAPS_RECEIVE"/>
+    
+<!-- ============================      These are permisions for GCM Push Notifications -->
+    
+	<uses-permission android:name="android.permission.VIBRATE"/>
+<!-- 	 GCM requires a Google account.  -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+<!--     Keeps the processor from sleeping when a message is received. -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+	
+<!--     This app has permission to register with GCM and receive message -->
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+	
+<!--  MODIFICATION REQUIRED  Replace "com.urbanairship.push.sample" with your package name  -->
+    <permission android:name="com.citrusbits.jumpangle.permission.C2D_MESSAGE" android:protectionLevel="signature" />
+	
+	<uses-permission android:name="com.citrusbits.jumpangle.permission.C2D_MESSAGE" />
+<!-- 	  The two elements above ensure that only this application can receive the messages and registration result -->
+<!--      END Urban Airship Required Permissions -->
+ 
+<!--     OPTIONAL Urban Airship Settings -->
+<!--     REQUIRED FOR LOCATION -->
+<!--     Use ACCESS_COARSE_LOCATION if GPS access is not necessary -->
+<!--     uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" / -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+<!-- ============================     These are permisions for GCM Push Notifications -->
+		
+	<uses-permission android:name="android.permission.INTERNET"/>
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	<uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    
+    <uses-feature
+  		android:glEsVersion="0x00020000"
+  		android:required="true"/>
+		
+<!--          -->
+<!-- android:allowClearUserData="true"     -->
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+		android:allowClearUserData="true"
+        android:name="businessclasses.PushApplication"
+        android:debuggable="true"
+        android:label="@string/app_name" 
+         android:theme="@style/MyTheme" >
+<!--                 <uses-library android:name="com.google.android.gms" /> -->
+              
+      <meta-data
+	    android:name="com.google.android.maps.v2.API_KEY"
+	    android:value="AIzaSyCMjgG4KDJvgZaerehzk5gvcDSsPVNAUy0"/>
+      
+        <activity
+            android:name="com.citrusbits.jumpangle.MainActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize"
+            android:label="@string/app_name" android:launchMode="singleTop"
+             >
+            
+        </activity>
+        <activity android:name="com.citrusbits.jumpangle.Login_Activity" android:screenOrientation="portrait" ></activity>
+        <activity android:name="com.citrusbits.jumpangle.Motorist_Register_Activity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"></activity>
+        <activity android:name="com.citrusbits.jumpangle.Registration_Choice_Activity" android:screenOrientation="portrait"></activity>
+        <activity android:name="com.citrusbits.jumpangle.Motorist_Add_Vehicle_Activity" android:windowSoftInputMode="stateHidden|adjustPan" android:screenOrientation="portrait"></activity>
+        <activity android:name="com.citrusbits.jumpangle.Provider_Register_Activity" android:screenOrientation="portrait"></activity>
+        <activity android:name="com.citrusbits.jumpangle.Provider_Add_Vehicle_Activity" android:windowSoftInputMode="stateHidden|adjustPan"  android:screenOrientation="portrait"></activity>
+        <activity android:name="com.citrusbits.jumpangle.Add_Service_Profile_Activity" android:windowSoftInputMode="stateHidden|adjustPan" android:screenOrientation="portrait"></activity>
+        <activity android:name="com.citrusbits.jumpangle.Battry_Jump_Service_Activity" android:screenOrientation="portrait"></activity>
+        <activity android:name="com.citrusbits.jumpangle.Fuel_Delivery_Service_Activity" android:screenOrientation="portrait"></activity>
+        <activity android:name="com.citrusbits.jumpangle.Tow_Service_Activity" android:screenOrientation="portrait"></activity>
+        <activity android:name="com.citrusbits.jumpangle.Vehicle_Unlock_Service" android:screenOrientation="portrait"></activity>
+        <activity android:name="com.citrusbits.jumpangle.Tire_Service_Activity" android:screenOrientation="portrait"></activity>
+        <activity android:name="com.citrusbits.jumpangle.Vehicle_Diagnosis_Details_Activity" android:screenOrientation="portrait"></activity>
+        <activity android:name="com.citrusbits.jumpangle.MainSettings" android:windowSoftInputMode="stateHidden|adjustPan" android:screenOrientation="portrait"></activity>
+        <activity android:name="com.citrusbits.jumpangle.Account_Settings" android:windowSoftInputMode="stateHidden|adjustPan" android:screenOrientation="portrait"></activity>
+        <activity android:name="com.citrusbits.jumpangle.VehicleSettings_Activity" android:screenOrientation="portrait"></activity>
+        <activity android:name="com.citrusbits.jumpangle.EventHistory_Activity" android:screenOrientation="portrait"></activity>
+        <activity android:name="com.citrusbits.jumpangle.Payment_Activity" android:screenOrientation="portrait"></activity>
+        <activity android:name="com.citrusbits.jumpangle.RefundRequest" android:screenOrientation="portrait"></activity>
+        <activity android:name="com.citrusbits.jumpangle.PaymentConfirmationActivity" android:screenOrientation="portrait"></activity>
+        <activity android:name="com.citrusbits.jumpangle.Provider_New_Register_Activity" android:windowSoftInputMode="stateHidden|adjustPan" android:screenOrientation="portrait"></activity>
+        <activity android:name="com.citrusbits.jumpangle.FirstLayout_Activity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        
+        <!-- REQUIRED for Urban Airship GCM-->
+        <receiver android:name="com.urbanairship.CoreReceiver" />
+        <receiver android:name="com.urbanairship.push.GCMPushReceiver"
+                  android:permission="com.google.android.c2dm.permission.SEND">       
+          <intent-filter>
+              <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+              <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+               
+<!--               MODIFICATION REQUIRED - Use your package name as the category -->
+              <category android:name="com.citrusbits.jumpangle" />
+          </intent-filter>
+<!--            REQUIRED for detecting when the application is upgraded so it can request a new GCM ID -->
+          <intent-filter>
+              <action android:name="android.intent.action.PACKAGE_REPLACED" />
+              <data android:scheme="package"/>
+          </intent-filter>
+        </receiver>
+ 
+        <service android:name="com.urbanairship.push.PushService"
+                 android:label="Push Notification Service"/>
+        <service android:name="com.urbanairship.push.PushWorkerService"
+                 android:label="Push Notification Worker Service"/>
+        <service android:name="com.urbanairship.analytics.EventService"
+                 android:label="Event Service"/>
+<!--         This is required for persisting preferences related to push and location -->
+<!--         MODIFICATION REQUIRED - Use your package name + ".urbanairship.provider" in the android:authorities -->
+        <provider android:name="com.urbanairship.UrbanAirshipProvider"
+            android:authorities="com.citrusbits.jumpangle.urbanairship.provider"
+            android:exported="false"
+            android:multiprocess="true" />
+<!--         END OF REQUIRED ITEMS -->
+ 
+<!--         OPTIONAL (for segments support) -->
+        <service android:name="com.urbanairship.location.LocationService" android:label="Segments Service"/>
+ 
+<!--         OPTIONAL, if you want to receive push, push opened and registration completed intents -->
+<!--         Replace the receiver below with your package and class name -->
+        <receiver android:name="com.citrusbits.jumpangle.IntentReceiver" />
+        
+    </application>
+
+</manifest>

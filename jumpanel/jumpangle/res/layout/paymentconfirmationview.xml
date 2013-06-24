@@ -1,0 +1,219 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+     >
+
+    <Button
+        android:id="@+id/ApprovePaymentOKButton"
+        android:layout_width="60dip"
+        android:layout_height="40dip"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/mybutton"
+        android:textSize="11dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginBottom="10dip"
+        android:text="Ok" />
+
+    <Button
+        android:id="@+id/ApprovePaymentCancelButton"
+        android:layout_width="80dip"
+        android:layout_height="40dip"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/mybutton"
+        android:textSize="11dip"
+        android:layout_marginRight="3dip"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dip"
+        
+        android:text="Cancel" />
+
+    <Button
+        android:id="@+id/ApprovePaymentTermsAndConditionButton"
+        android:layout_width="120dip"
+        android:layout_height="40dip"
+        android:visibility="gone"
+        android:textSize="11dip"
+        android:layout_alignBaseline="@+id/ApprovePaymentCancelButton"
+        android:layout_alignBottom="@+id/ApprovePaymentCancelButton"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="2dip"
+        android:background="@drawable/mybutton"
+        android:text="Terms &amp; Services" />
+
+    
+
+    <TextView
+        android:id="@+id/ConfirmationDialogPaymentDescriptionTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="26dp"
+        android:layout_centerHorizontal="true"
+        
+        
+        android:textSize="16dip"
+        android:textStyle="bold"
+        android:text="Bid Confirmation" />
+    
+    <LinearLayout android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="30dip"
+            android:layout_below="@+id/ConfirmationDialogPaymentDescriptionTV"
+            android:layout_marginTop="20dip"
+            android:orientation="horizontal">
+            <LinearLayout android:layout_width="120dip"
+                android:gravity="left"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+                <TextView android:layout_width="wrap_content"
+                    android:layout_height="20dip"
+                    android:gravity="center_vertical"
+                    android:textSize="11dip"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/black"
+                    android:text="Requesting: "/>
+                <TextView android:layout_width="wrap_content"
+                    android:layout_height="20dip"
+                    android:gravity="center_vertical"
+                    android:textSize="11dip"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/black"
+                    android:text="For: "/>
+                <TextView android:layout_width="wrap_content"
+                    android:layout_height="20dip"
+                    android:gravity="center_vertical"
+                    android:textSize="11dip"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/black"
+                    android:text="From: "/>
+                <TextView android:layout_width="wrap_content"
+                    android:layout_height="20dip"
+                    android:gravity="center_vertical"
+                    android:textSize="11dip"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/black"
+                    android:text="ETA: "/>
+                <TextView android:layout_width="wrap_content"
+                    android:layout_height="20dip"
+                    android:gravity="center_vertical"
+                    android:textSize="11dip"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/black"
+                    android:text="Distance: "/>
+                <TextView android:layout_width="wrap_content"
+                    android:layout_height="20dip"
+                    android:gravity="center_vertical"
+                    android:textSize="11dip"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/black"
+                    android:text="Bid Acceptance Time: "/>
+                <TextView android:layout_width="wrap_content"
+                    android:layout_height="20dip"
+                    android:gravity="center_vertical"
+                    android:textSize="11dip"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/black"
+                    android:text="Max Wait Time: "/>
+                <TextView android:layout_width="wrap_content"
+                    android:layout_height="20dip"
+                    android:gravity="center_vertical"
+                    android:textSize="11dip"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/black"
+                    android:text="Bid Amount: "/>
+                
+               
+                
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:gravity="left"
+                android:layout_height="wrap_content">
+                
+                <TextView android:layout_width="match_parent"
+                    android:singleLine="true"
+                    android:gravity="center_vertical"
+                    android:layout_height="20dip"
+                    android:textSize="11dip"
+                    android:id="@+id/Payment_Confirmation_Requesting_TV"
+                    android:textColor="@android:color/black"
+                    android:text="value "/>
+                <TextView android:layout_width="match_parent"
+                    android:singleLine="true"
+                    android:layout_height="20dip"
+                    android:gravity="center_vertical"
+                    android:textSize="11dip"
+                    android:id="@+id/Payment_Confirmation_For_TV"
+                    android:textColor="@android:color/black"
+                    android:text="value "/>
+                <TextView android:layout_width="match_parent"
+                    android:singleLine="true"
+                    android:layout_height="20dip"
+                    android:gravity="center_vertical"
+                    android:textSize="11dip"
+                    android:id="@+id/Payment_Confirmation_From_TV"
+                    android:textColor="@android:color/black"
+                    android:text="value "/>
+                <TextView android:layout_width="match_parent"
+                    android:singleLine="true"
+                    android:layout_height="20dip"
+                    android:gravity="center_vertical"
+                    android:textSize="11dip"
+                    android:id="@+id/Payment_Confirmation_ETA_TV"
+                    android:textColor="@android:color/black"
+                    android:text="value "/>
+               <TextView android:layout_width="match_parent"
+                    android:singleLine="true"
+                    android:layout_height="20dip"
+                    android:gravity="center_vertical"
+                    android:textSize="11dip"
+                    android:id="@+id/Payment_Confirmation_Distance_TV"
+                    android:textColor="@android:color/black"
+                    android:text="value "/>
+                <TextView android:layout_width="match_parent"
+                    android:singleLine="true"
+                    android:layout_height="20dip"
+                    android:gravity="center_vertical"
+                    android:textSize="11dip"
+                    android:id="@+id/Payment_Confirmation_BidAcceptanceTime_TV"
+                    android:textColor="@android:color/black"
+                    android:text="value "/>
+                <TextView android:layout_width="match_parent"
+                    android:singleLine="true"
+                    android:layout_height="20dip"
+                    android:gravity="center_vertical"
+                    android:textSize="11dip"
+                    android:id="@+id/Payment_Confirmation_MaxWaitTime_TV"
+                    android:textColor="@android:color/black"
+                    android:text="value "/>
+                <TextView android:layout_width="match_parent"
+                    android:singleLine="true"
+                    android:layout_height="20dip"
+                    android:gravity="center_vertical"
+                    android:textSize="11dip"
+                    android:id="@+id/Payment_Confirmation_BidAmount_TV"
+                    android:textColor="@android:color/black"
+                    android:text="value "/>
+                
+            </LinearLayout>
+        </LinearLayout>
+    
+
+    <CheckBox
+        android:id="@+id/ApprovePaymentCheckBox"
+        android:layout_width="wrap_content"
+        android:visibility="gone"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/ConfirmationDialogPaymentDescriptionTV"
+        android:textColor="@android:color/black"
+        android:layout_below="@+id/ConfirmationDialogPaymentDescriptionTV"
+        android:checked="true"
+        android:layout_marginTop="16dp"
+        android:text="Accept Terms of Services" />
+    
+</RelativeLayout>

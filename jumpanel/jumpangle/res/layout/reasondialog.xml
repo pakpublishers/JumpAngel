@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     android:background="@android:color/white"
+     android:padding="5dip"
+     android:id="@+id/MainRLayout"
+     android:gravity="center_horizontal"
+    android:orientation="vertical" >
+    	
+    <Button
+        
+        android:layout_width="120dip"
+        android:layout_height="40dip"
+        android:background="@drawable/btnselector"
+        android:text="Max. Wait Time"
+        android:textColor="@android:color/white"
+        android:textSize="12dip" />
+
+    <Button
+        
+        android:layout_width="120dip"
+        android:layout_height="40dip"
+        android:layout_marginTop="5dip"
+        android:background="@drawable/btnselector"
+        android:text="Bid Amount"
+        android:textColor="@android:color/white"
+        android:textSize="12dip" />
+
+    <Button
+        
+        android:layout_width="120dip"
+        android:layout_height="40dip"
+        android:layout_marginTop="5dip"
+        android:background="@drawable/btnselector"
+        android:text="Currently Busy"
+        android:textColor="@android:color/white"
+        android:textSize="12dip" />
+    
+    <Button
+        
+        android:layout_width="120dip"
+        android:layout_height="40dip"
+        android:layout_marginTop="5dip"
+        android:background="@drawable/btnselector"
+        android:text="Wrong equipment"
+        android:textColor="@android:color/white"
+        android:textSize="12dip" />
+    
+    
+    
+    
+
+</LinearLayout>

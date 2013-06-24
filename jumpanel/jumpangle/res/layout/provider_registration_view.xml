@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white" >
+    
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+        
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <EditText
+                android:id="@+id/Emailaddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:layout_marginTop="22dp"
+                android:ems="10"
+                android:hint="First Name"
+                android:inputType="textPersonName"
+                android:text="asad" >
+
+                <requestFocus />
+            </EditText>
+
+            <EditText
+                android:id="@+id/LoginPasword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Emailaddress"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:layout_marginTop="17dp"
+                android:hint="Last Name"
+                android:inputType="textPersonName"
+                android:text="hashmi" />
+
+            <EditText
+                android:id="@+id/CellNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/LoginPasword"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:layout_marginTop="16dp"
+                android:hint="Cell Phone"
+                android:inputType="phone"
+                android:text="03425295737" />
+
+            <EditText
+                android:id="@+id/EmailAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/CellNumber"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:layout_marginTop="18dp"
+                android:ems="10"
+                android:hint="E-Mail Address"
+                android:inputType="textEmailAddress"
+                android:text="masadhashmi@" />
+
+            <EditText
+                android:id="@+id/Pasword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/EmailAddress"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:layout_marginTop="16dp"
+                android:ems="10"
+                android:hint="Pasword"
+                android:inputType="textPassword"
+                android:text="1234" />
+
+            <Button
+                android:id="@+id/Provider_JoinAFleet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/Pasword"
+                android:layout_marginRight="10dip"
+                android:layout_below="@+id/Pasword"
+                android:text="Join a Fleet" />
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Provider_JoinAFleet"
+                android:layout_marginTop="58dip"
+                android:layout_marginLeft="10dip" >
+
+                <RelativeLayout android:id="@+id/first" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ToggleButton
+                    android:id="@+id/CommercialFleetInsuranceToggle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginRight="23dp"
+                    android:text="ToggleButton" />
+
+                <TextView
+                    android:id="@+id/VehivleTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="Commercial Fleet Insurance" />
+                </RelativeLayout>
+                <RelativeLayout android:id="@+id/secound" android:layout_below="@+id/first" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ToggleButton
+                    android:id="@+id/ProfessionallyPermitedFleet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginRight="23dp"
+                    android:text="ToggleButton" />
+
+                <TextView
+                    android:id="@+id/VehivleTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="Professionaly Permited Fleet" />
+                </RelativeLayout>
+                
+                <RelativeLayout android:id="@+id/third" android:layout_below="@+id/secound" android:layout_width="match_parent" android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/VehivleTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="Commercialy Licesenced Driver" />
+
+                <ToggleButton
+                    android:id="@+id/CommerciallyLicesencedDriver"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginRight="22dp"
+                    android:text="ToggleButton" />
+
+                </RelativeLayout>
+                
+                <RelativeLayout android:id="@+id/fourth" android:layout_below="@+id/third" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ToggleButton
+                    android:id="@+id/NATACertifiedDriver"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginRight="23dp"
+                    android:text="ToggleButton" />
+
+                <TextView
+                    android:id="@+id/VehivleTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="NATA Certified Drivers" />
+                </RelativeLayout>
+
+                
+            </RelativeLayout>
+            <EditText android:layout_below="@+id/relativeLayout1"  android:layout_width="match_parent" android:layout_height="wrap_content"
+               android:id="@+id/ProviderWePayID" 
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:layout_marginTop="18dp"
+                />
+            
+            <Button android:id="@+id/CancelButton" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:layout_below="@+id/ProviderWePayID"
+                android:layout_alignParentLeft="true"
+                android:text="Cancel"
+                />
+
+            
+            <RelativeLayout android:id="@+id/Provider_FleetDetail" 
+                android:layout_below="@+id/Provider_JoinAFleet"
+                android:layout_width="match_parent"
+                
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+              	android:layout_height="60dip" >
+
+                <Spinner
+                    android:id="@+id/FleetVehicleCount"
+                    android:layout_width="130dip"
+                    android:entries="@array/FleetVehicle_Counts"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true" />
+
+                <Spinner
+                    android:id="@+id/GeneralServiceDutySpinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/FleetVehicleCount"
+                    android:entries="@array/GeneralServiceDutyArray" />
+                
+            </RelativeLayout>
+            
+           
+
+            <Button
+                android:id="@+id/NextButton"
+                android:layout_width="80dip"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@+id/ProviderWePayID"
+                android:layout_alignParentRight="true"
+                android:text="Next" />
+
+        </RelativeLayout>
+        
+        
+    </ScrollView>
+    
+
+</RelativeLayout>

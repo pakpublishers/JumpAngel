@@ -1,0 +1,141 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/thinwhite"
+    tools:context=".MainActivity" >
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_marginRight="20dip"
+       android:layout_marginLeft="20dip"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ConfirmationDialogPaymentDescriptionTV"
+        android:orientation="vertical">
+    
+        <LinearLayout android:layout_width="match_parent" android:orientation="vertical" android:layout_height="wrap_content" android:gravity="center_horizontal">
+        
+    <LinearLayout android:layout_width="wrap_content" android:gravity="center_vertical" android:layout_height="wrap_content"
+        android:background="@drawable/jumpangellogo"
+        android:layout_alignParentTop="true"
+        android:id="@+id/logo"
+        
+        
+        android:layout_centerHorizontal="true"></LinearLayout>
+    
+     <TextView android:text="Login"
+	        android:layout_width="wrap_content"
+	        android:layout_centerHorizontal="true"
+	        android:layout_marginTop="2dip"
+	        android:layout_marginBottom="10dip"
+	        android:textSize="16dip"
+	        android:layout_height="wrap_content"
+	        android:textColor="@android:color/black"
+	        android:textStyle="bold"
+	        android:id="@+id/title"/>
+    
+    </LinearLayout>
+     
+    <LinearLayout android:background="@drawable/top" android:layout_width="match_parent" android:gravity="center_vertical" android:layout_height="50dip">
+        <TextView android:text="Email" android:textSize="16dip" android:textStyle="bold" android:layout_marginRight="5dip" android:paddingLeft="10dip" android:gravity="left|center_vertical" android:layout_width="83dip" android:layout_height="42dip"  android:textColor="@color/black"/>
+        <TextView android:text=": " android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="@color/black"/>
+        <EditText
+	        android:id="@+id/Emailaddress"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:layout_margin="0dip"
+	        android:layout_marginLeft="5dip"
+	        android:background="@null"
+	         android:textSize="16dip" 
+	        android:ems="10"
+	        android:hint="Email Address"
+	        
+	        android:inputType="textEmailAddress" >
+	
+	        <requestFocus />
+	    </EditText>
+    </LinearLayout>
+    
+    <LinearLayout android:background="@drawable/bottom"   android:layout_width="match_parent" android:gravity="center_vertical" android:layout_height="50dip">
+        <TextView android:textStyle="bold" android:textSize="16dip"  android:text="Password" android:paddingLeft="10dip" android:layout_marginRight="5dip" android:gravity="left|center_vertical" android:layout_width="83dip" android:layout_height="42dip" android:textColor="@color/black"/>
+         <TextView android:text=": " android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="@color/black"/>
+         <EditText
+        android:id="@+id/LoginPasword"
+        android:layout_width="match_parent"
+        android:layout_margin="0dip"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="5dip"
+        android:background="@null"
+         android:textSize="16dip" 
+        android:ems="10"
+        android:paddingLeft="3dip"
+        android:hint="Password"
+        
+        android:inputType="textPassword" />
+     </LinearLayout>   
+        
+        
+        
+       
+
+    
+        
+    
+    
+    
+
+    
+    
+<LinearLayout android:layout_width="match_parent"  android:gravity="right" android:paddingRight="20dip"  android:layout_marginTop="10dip" android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    
+    <Button
+        android:id="@+id/LoginUserButton"
+        android:layout_width="80dip"
+        android:layout_height="40dip"
+        android:layout_alignLeft="@+id/ConfirmationDialogPaymentDescriptionTV"
+        android:layout_below="@+id/LoginPasword"
+        android:layout_marginLeft="5dip"
+        android:textColor="@android:color/white"
+        android:textSize="11dip"
+        android:background="@drawable/btnselector"
+        android:text="Login" />
+    
+</LinearLayout>
+<LinearLayout android:layout_width="match_parent"
+    android:gravity="right|center_vertical"
+    android:paddingRight="20dip"
+    android:layout_marginTop="25dip"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/ForgotPasoword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/LoginUserButton"
+        android:layout_below="@+id/LoginUserButton"
+        
+        android:textColor="@android:color/black"
+        android:textSize="16dip"
+        android:textStyle="bold"
+        android:text="Forgot Pasword ?"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+</LinearLayout>
+    
+    </LinearLayout>
+    <Button
+        android:id="@+id/CancelButton"
+        android:layout_width="80dip"
+        android:layout_height="40dip"
+        
+        
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="10dip"
+        android:layout_marginLeft="10dip"
+        android:background="@drawable/btnselector"
+        android:textColor="@android:color/white"
+        android:textSize="11dip"
+        android:text="Cancel" />
+</RelativeLayout>

@@ -1,0 +1,249 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/thinwhite"
+    tools:context=".MainActivity" >
+
+    
+    <LinearLayout android:layout_width="match_parent" 
+        android:id="@+id/titlelayout"
+        android:layout_marginTop="10dip"
+        android:gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:background="@drawable/jumpangellogo"></LinearLayout>
+        
+	    <TextView android:text="Registration"
+	        android:layout_width="wrap_content"
+	        android:layout_centerHorizontal="true"
+	        android:layout_marginTop="2dip"
+	        android:layout_marginBottom="10dip"
+	        android:textSize="16dip"
+	        android:layout_height="wrap_content"
+	        android:textColor="@android:color/black"
+	        android:textStyle="bold"
+	        android:id="@+id/title"/>
+    </LinearLayout>
+    
+    <ScrollView android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip"
+        android:layout_above="@+id/relativeLayout1"
+        android:layout_below="@+id/titlelayout"
+        >
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        
+        android:layout_height="match_parent" >
+
+         <LinearLayout android:background="@drawable/top"  android:layout_width="match_parent" android:gravity="center_vertical" android:layout_height="55dip">
+	        <TextView android:text="First Name" android:textSize="16dip"   android:layout_marginRight="5dip"  android:gravity="left|center_vertical" android:layout_width="80dip" android:layout_height="42dip"  android:textStyle="bold" android:textColor="@android:color/black"/>
+	        <TextView android:text=": " android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="@color/black"/>
+	        <EditText
+
+            android:id="@+id/Emailaddress"
+		        android:layout_width="match_parent"
+		        android:layout_height="match_parent"
+		        android:layout_margin="0dip"
+		        android:layout_marginLeft="10dip"
+		        android:textSize="16dip" 
+		        android:gravity="center_vertical"
+		        android:ems="10"
+		        android:hint="First Name"
+		        android:background="@null"
+		        android:inputType="textEmailAddress" >
+		
+		        <requestFocus />
+		    </EditText>
+	    </LinearLayout>
+        
+       
+<LinearLayout android:layout_width="match_parent" android:gravity="center_vertical" android:layout_height="55dip" android:background="@drawable/mid">
+	        <TextView android:text="Last Name" android:textSize="16dip"  android:layout_marginLeft="13dip"  android:layout_marginRight="5dip"  android:gravity="left|center_vertical" android:layout_width="80dip" android:layout_height="42dip"  android:textStyle="bold" android:textColor="@android:color/black"/>
+	        <TextView android:text=": " android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="@color/black"/>
+	        <EditText
+
+
+            android:id="@+id/LoginPasword"
+            android:hint="Last Name"
+		        android:layout_width="match_parent"
+		        android:layout_height="match_parent"
+		        android:layout_margin="0dip"
+		        android:layout_marginLeft="10dip"
+		        android:textSize="16dip" 
+		        android:gravity="center_vertical"
+		        android:ems="10"
+android:background="@null"
+		        
+		        android:inputType="textEmailAddress" >
+		
+		        
+		    </EditText>
+	    </LinearLayout>
+
+
+<LinearLayout android:layout_width="match_parent" android:gravity="center_vertical" android:layout_height="55dip" android:background="@drawable/mid">
+	        <TextView android:text="Email" android:textSize="16dip"  android:layout_marginLeft="13dip"   android:layout_marginRight="5dip"  android:gravity="left|center_vertical" android:layout_width="80dip" android:layout_height="42dip"  android:textStyle="bold" android:textColor="@android:color/black"/>
+	        <TextView android:text=": " android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="@color/black"/>
+	        <EditText
+
+            android:id="@+id/EmailAddress"
+		        android:layout_width="match_parent"
+		        android:layout_height="match_parent"
+		        android:layout_margin="0dip"
+		        android:layout_marginLeft="10dip"
+		        android:textSize="16dip" 
+		        android:gravity="center_vertical"
+		        android:ems="10"
+		        android:hint="Email Address"
+		        android:background="@null"
+		        android:inputType="textEmailAddress" >
+		
+		        
+		    </EditText>
+	    </LinearLayout>
+
+        
+
+<!--         <EditText -->
+<!--             android:id="@+id/CellNumber" -->
+<!--             android:layout_width="match_parent" -->
+<!--             android:layout_height="wrap_content" -->
+<!--             android:layout_below="@+id/LoginPasword" -->
+<!--             android:layout_marginLeft="10dip" -->
+<!--             android:layout_marginRight="10dip" -->
+<!--             android:layout_marginTop="16dp" -->
+<!--             android:hint="Cell Phone" -->
+<!--             android:inputType="phone" -->
+<!--             android:text="03425295737" /> -->
+
+      
+
+<LinearLayout android:layout_width="match_parent" android:gravity="center_vertical" android:layout_height="55dip" android:background="@drawable/bottom">
+	        <TextView android:text="Password" android:textSize="16dip"   android:layout_marginRight="5dip"  android:gravity="left|center_vertical" android:layout_width="80dip" android:layout_height="42dip"  android:textStyle="bold" android:textColor="@android:color/black"/>
+	        <TextView android:text=": " android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="@color/black"/>
+	        <EditText
+
+            android:id="@+id/Pasword"
+		        android:layout_width="match_parent"
+		        android:layout_height="match_parent"
+		        android:layout_margin="0dip"
+		        android:layout_marginLeft="10dip"
+		        android:gravity="center_vertical"
+		        android:ems="10"
+		        android:hint="Password"
+		        android:background="@null"
+		        android:textSize="16dip" 
+		        android:inputType="textPassword" >
+			  
+		        
+		    </EditText>
+	    </LinearLayout>
+
+       
+
+<!--         <Spinner -->
+<!--             android:id="@+id/MotoristIMNSpiner" -->
+<!--             android:layout_width="100dip" -->
+<!--             android:layout_height="wrap_content" -->
+<!--             android:layout_alignLeft="@+id/Pasword" -->
+<!--             android:layout_alignRight="@+id/Pasword" -->
+<!--             android:layout_below="@+id/VehivleTitle" -->
+<!--             android:layout_marginTop="19dp" -->
+<!--             android:ems="10" -->
+<!--             android:inputType="phone" /> -->
+
+<!--         <TextView -->
+<!--             android:id="@+id/VehivleTitle" -->
+<!--             android:layout_width="wrap_content" -->
+<!--             android:layout_height="wrap_content" -->
+<!--             android:layout_below="@+id/Pasword" -->
+<!--             android:layout_centerHorizontal="true" -->
+<!--             android:layout_marginTop="26dp" -->
+<!--             android:text="International Emergency #" -->
+<!--             android:textAppearance="?android:attr/textAppearanceLarge" -->
+<!--             android:textColor="@android:color/black" /> -->
+
+<!--         <EditText -->
+<!--             android:id="@+id/WePayTV" -->
+<!--             android:layout_width="wrap_content" -->
+<!--             android:layout_height="wrap_content" -->
+<!--             android:layout_alignParentLeft="true" -->
+<!--             android:layout_alignParentRight="true" -->
+<!--             android:layout_below="@+id/MotoristIMNSpiner" -->
+<!--             android:ems="10" -->
+<!--             android:hint="Paypal User Name" -->
+<!--             android:inputType="textEmailAddress" -->
+<!--             android:text="wepay" /> -->
+
+<!--         <EditText -->
+<!--             android:id="@+id/ExpiryDate" -->
+<!--             android:layout_width="120dip" -->
+<!--             android:layout_height="wrap_content" -->
+<!--             android:layout_below="@+id/WePayTV" -->
+<!--             android:hint="Expiry Date" -->
+<!--             android:inputType="date" -->
+<!--             android:text="12/12/12" /> -->
+
+       
+
+<!--         <EditText -->
+<!--             android:id="@+id/ThreeDigitSecurityCode" -->
+<!--             android:layout_width="wrap_content" -->
+<!--             android:layout_height="wrap_content" -->
+<!--             android:layout_above="@+id/relativeLayout1" -->
+<!--             android:layout_alignParentRight="true" -->
+<!--             android:layout_marginRight="3dip " -->
+<!--             android:layout_toRightOf="@+id/ExpiryDate" -->
+<!--             android:ems="10" -->
+<!--             android:hint="3 Digit Security Code" -->
+<!--             android:inputType="number" -->
+<!--             android:text="123" /> -->
+
+    </LinearLayout>
+
+    </ScrollView>
+    
+     <RelativeLayout
+            android:id="@+id/relativeLayout1"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="10dip"
+            android:layout_height="45dip"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            android:layout_alignParentBottom="true" >
+
+            <Button
+                android:id="@+id/RegisterCancelButton"
+                android:layout_width="80dip"
+                android:layout_height="40dip"
+                
+                android:layout_centerVertical="true"
+                android:text="Cancel"
+                android:background="@drawable/btnselector"
+                android:textColor="@android:color/white"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:textSize="11dip"
+                 />
+
+            <Button
+                android:id="@+id/RegisterSaveButton"
+                android:layout_width="wrap_content"
+                android:layout_height="40dip"
+                android:background="@drawable/btnselector"
+                android:textColor="@android:color/white"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:textSize="11dip"
+                
+                android:text="Register"
+                 />
+        </RelativeLayout>
+    
+</RelativeLayout>

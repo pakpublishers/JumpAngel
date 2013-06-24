@@ -1,0 +1,89 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+     >
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="17dp"
+        android:gravity="center"
+        android:text="Battry Jump Service Detail\r\nVehicle Name"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@android:color/black" />
+
+    <CheckBox
+        android:id="@+id/GasolineVehicleFD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/title"
+        android:layout_below="@+id/title"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="23dp"
+        android:text="Light Duty" />
+
+    <CheckBox
+        android:id="@+id/DeiselVehicle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/GasolineVehicleFD"
+        android:textColor="@android:color/black"
+        android:layout_below="@+id/GasolineVehicleFD"
+        android:text="Medium Duty" />
+
+    <CheckBox
+        android:id="@+id/CNGVehicleCB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:layout_alignLeft="@+id/DeiselVehicle"
+        android:layout_below="@+id/DeiselVehicle"
+        android:text="Heavy Duty" />
+
+    <Button
+        android:id="@+id/BJCancelButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:text="Cancel" />
+
+	<RadioGroup
+	    android:id="@+id/BJApplyShoice"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_above="@+id/BJCancelButton"
+	    android:paddingLeft="50dip" >
+
+	    <RadioButton
+	        android:id="@+id/BJEntireFleet"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerHorizontal="true"
+	        android:text="Apply to Vehicle Name only"
+	        android:textColor="@android:color/black" />
+	    
+	    <RadioButton
+	        android:id="@+id/BJEntireFleet"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        
+	        android:layout_alignLeft="@+id/BJVehicleOnly"
+	        
+	        android:textColor="@android:color/black"
+	        android:text="Apply to Entire Fleet" />
+		</RadioGroup>
+    <Button
+        android:id="@+id/BJDoneButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:text="Done" />
+
+</RelativeLayout>

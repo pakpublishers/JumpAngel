@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    
+    android:background="@color/menu_light_gray"
+    android:orientation="vertical" >
+    <RelativeLayout android:layout_width="match_parent"
+        
+        android:layout_height="20dip">
+        
+        <LinearLayout 
+            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="12dip"
+                android:text="Transaction ID: "
+                android:textColor="@android:color/white"/>
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12dip"
+                android:id="@+id/TransactionID"
+                android:text="1"
+                android:textColor="@android:color/white"/>
+        </LinearLayout>
+        <LinearLayout 
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="12dip"
+                android:text="Service: "
+                android:textColor="@android:color/white"/>
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12dip"
+                android:id="@+id/service"
+                android:text="Battry Jump"
+                android:textColor="@android:color/white"/>
+        </LinearLayout>
+        
+    </RelativeLayout>
+    
+    <RelativeLayout android:layout_width="match_parent"
+        android:layout_height="20dip">
+        
+        <LinearLayout 
+            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="12dip"
+                android:text="Other Party Angel: "
+                android:textColor="@android:color/white"/>
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12dip"
+                android:id="@+id/otherpartyangel"
+                android:text="T"
+                android:textColor="@android:color/white"/>
+        </LinearLayout>
+        <LinearLayout 
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="12dip"
+                android:text="Rattings: "
+                android:textColor="@android:color/white"/>
+
+            <RatingBar
+                android:id="@+id/ratingBar1"
+                android:layout_width="80dip"
+                android:numStars="1"
+                android:stepSize="1.0"
+                
+                
+                style="@style/myRatingBar"
+                
+                android:rating="3.5"
+                
+                android:layout_height="18dip" />
+            
+        </LinearLayout>
+        
+    </RelativeLayout>
+    
+    
+    
+    <RelativeLayout android:layout_width="match_parent"
+        android:layout_height="20dip">
+        
+        <LinearLayout 
+            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="12dip"
+                android:text="Completion Time: "
+                android:textColor="@android:color/white"/>
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12dip"
+                android:id="@+id/CompletionTime"
+                android:text="12/12/12"
+                android:textColor="@android:color/white"/>
+        </LinearLayout>
+        
+        
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="match_parent"
+        android:layout_height="20dip">
+        
+        <LinearLayout 
+            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="12dip"
+                android:text="Bid Amount: "
+                android:textColor="@android:color/white"/>
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12dip"
+                android:id="@+id/BidAmount"
+                android:text="$50"
+                android:textColor="@android:color/white"/>
+        </LinearLayout>
+        
+        
+    </RelativeLayout>
+
+</LinearLayout>

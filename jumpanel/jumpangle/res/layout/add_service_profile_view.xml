@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/thinwhite" >
+    
+     <RelativeLayout android:id="@+id/PAV_Title_Area"
+           android:layout_marginTop="10dip" android:layout_width="match_parent"  android:layout_height="50dip">
+        
+        <LinearLayout android:layout_marginLeft="10dip" android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+             android:background="@drawable/jumpangellogo"></LinearLayout>
+        <TextView
+                android:id="@+id/VehivleTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vehicle Services"
+                android:textStyle="bold"
+                android:textSize="16dip"
+                android:gravity="center"
+                android:layout_centerInParent="true"
+                android:textColor="@android:color/black" />
+    </RelativeLayout>
+    
+    <ScrollView android:layout_above="@+id/footer" android:layout_below="@+id/PAV_Title_Area" android:layout_width="match_parent" android:layout_height="match_parent">
+        
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            
+            
+            <LinearLayout android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/VehivleTitle"
+                android:paddingLeft="20dip"
+                android:paddingRight="20dip"
+                android:orientation="vertical"
+                >
+                
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="80dip"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:id="@+id/title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:textColor="@android:color/black"
+                        android:text="Battery Jump"
+                        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                    <ToggleButton
+                        android:id="@+id/BattryJumpToggle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:text="ToggleButton" />
+
+                </RelativeLayout>
+                
+                 <RelativeLayout android:layout_width="match_parent" android:layout_height="80dip"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:text="Fuel Delivery"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="@android:color/black" />
+
+                    <ToggleButton
+                        android:id="@+id/FuelDeliveryToggle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:text="ToggleButton" />
+
+                </RelativeLayout>
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="80dip"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:text="Tow"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="@android:color/black" />
+
+                    <ToggleButton
+                        android:id="@+id/TowToggle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:text="ToggleButton" />
+
+                </RelativeLayout>
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="80dip"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:text="Tire Service"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="@android:color/black" />
+
+                    <ToggleButton
+                        android:id="@+id/TireServiceToggle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:text="ToggleButton" />
+
+                </RelativeLayout>
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="80dip"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:text="Diagnostics"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="@android:color/black" />
+
+                    <ToggleButton
+                        android:id="@+id/DiagnosticsToggle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:text="ToggleButton" />
+
+                </RelativeLayout>
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="80dip"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:text="Vehicle Unlocks"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="@android:color/black" />
+
+                    <ToggleButton
+                        android:id="@+id/VehicleUnlocksToggle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:text="ToggleButton" />
+
+                </RelativeLayout>
+                 <RelativeLayout android:layout_width="match_parent" android:layout_height="80dip"
+                    android:gravity="center_vertical">
+
+                    <Button
+                        android:layout_width="90dip"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:text="Cancel"
+                        android:visibility="gone"
+                        android:id="@+id/ServiceCancelButton"
+                        android:textColor="@android:color/black" />
+
+                    
+
+                </RelativeLayout>
+            </LinearLayout>
+            
+            
+        </RelativeLayout>
+        
+    </ScrollView>
+    
+
+    <RelativeLayout android:id="@+id/footer" android:layout_width="match_parent" android:background="@color/thinwhite" android:paddingRight="5dip" android:layout_alignParentBottom="true" android:layout_height="50dip">
+       <Button
+                        android:id="@+id/AddNextVehicleButton"
+                        android:layout_width="120dip"
+                        android:background="@drawable/btnselector"
+                        android:textColor="@android:color/white"
+                        android:textSize="11dip"
+                        android:layout_height="40dip"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:text="Save" />
+    </RelativeLayout>
+    
+    
+</RelativeLayout>

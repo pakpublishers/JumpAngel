@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <TimePicker
+        android:id="@+id/RequestTimePicker"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="10dip"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:layout_below="@+id/RequestTimePicker">
+
+    <Button
+        android:id="@+id/SetTime"
+        android:layout_width="match_parent"
+        android:layout_weight="0.50"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="Set" />
+
+    <Button
+        android:id="@+id/CancelTime"
+        android:layout_width="match_parent"
+        android:layout_weight="0.50"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:text="Cancel" />
+
+    </LinearLayout>
+
+</RelativeLayout>
